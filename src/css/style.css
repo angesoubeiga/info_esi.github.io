@@ -1,0 +1,482 @@
+/*mise en forme du menu*/
+
+body{
+
+/* la police du test*/
+
+    font-family: 'century Gothic',calibri,serif;
+    font-size: 13px;
+    margin: 0px;
+    padding: 0px;
+}
+/*mise en forme h1*/
+
+h1{
+
+    font-size: 40;
+    font-weight: normal;
+    text-align: center;
+}
+/*mise en forme header*/    
+header{
+
+    height: 100px;
+    
+}
+ img.space{
+    border: 0px solid #181818;
+    margin-right: 300px;
+    
+}
+
+footer{
+    background: url('images/ico_top.png') no-repeat top center,
+    url('images/separateur.png') repeat-x top, url('images/ombre.png')
+     repeat-x top;
+    padding-top: 30px;
+    background-color: #1c1a19;
+   
+}
+footer p,footer ul
+{
+    font-size: 1em;
+    color: #FFF
+}
+footer h1{
+    font-size: 2em;
+    color: #FFF
+}
+#adress ,#kk , #activite{
+    display: inline-block;
+    vertical-align: top;
+}
+#adress{
+    width: 28%;
+}
+#kk
+{
+    width: 35%;
+}
+#emplacement{
+    width: 31%;
+}
+#kk img{
+    border: 1px solid #181818;
+    margin-right: 50px;
+}
+#activite ul{
+    display: inline-block;
+    vertical-align: top;
+    margin-top: 0;
+    width: 48%;
+    list-style-image: url('images/ico_liensexterne.png');
+    padding-left: 2px;
+}
+#activite a{
+
+    text-decoration: none;
+    color:#FFF;
+}
+#a.telecharge{
+    text-align: center;
+
+}
+
+.inscription{
+    text-align: center;
+    background-color: #57cef8;
+    margin-bottom: 20px;
+    padding-block-start: 2px;
+  
+}
+input.form-control{
+    border-radius: 100px;
+
+}
+button.bouton{
+    border: 10px solid #0070bc;
+}
+.forme{
+    font-size: 70px;
+    color: #290527;
+}
+
+/*la partie galerie */
+.section-images{
+    padding: 20px;
+    border-spacing: 20px 10px;
+    
+}
+
+/*mise en forme les élements du menu */
+nav{
+    /* etendre le menu sur toute la page*/
+    width: 100%;/*la largeur a 100%*/
+    background-color: #f50e40;
+    border-top: 30px solid #f50e40;
+    padding-top: 0px;
+    z-index: 999;
+    
+
+}
+
+nav ul{
+    margin: 0px;
+    padding: 0px;
+
+    
+
+}
+.galerie-iot{
+    text-align: center;
+    color: rgb(70, 11, 192);
+    font-size: 60px;
+}
+
+
+
+nav li{
+    list-style: none;
+    float: left;/*mettre les element en ligne*/
+}
+/*mise en forme les élements du lien a */
+
+nav a{
+    display: inline block;
+    text-decoration: none;
+    padding: 20px 30px;
+    color: #FFF;
+    text-transform:uppercase;
+    font-size: 15px; 
+    float: right;
+    margin-left: 15px;
+    
+}
+/*mise en forme les élements du style du div intermediaire le table */
+
+.table{
+    display: table;
+    margin: 0 auto; /* centrer le menu*/
+}
+
+/*mise en forme les élements du menu */
+
+.menu-ind:hover {
+    border-top: 5px solid #4C8;
+    background-color: rgba(64, 200, 130, 0.15);
+
+}
+.menu-gal:hover{
+    border-top: 5px solid #f1dc4f;
+    background-color: rgba(214, 215, 79, 0.15);
+}
+.menu-ins:hover{
+    border-top: 5px solid #0070bc;
+    background-color: rgba(000, 112, 192, 0.15);
+    
+}
+.menu-con:hover{
+    border-top: 5px solid #230a4d;
+    background-color: rgba(228, 77, 38, 0.15);
+}
+ nav li:hover a{
+     padding: 15px 30px 20px 30px;
+ }
+
+
+ .banniere{
+     margin-top: -20px /*mettre limage en transparent*/
+
+
+ }
+.banniere .banniere-image{
+    position: relative;
+}
+.banniere .contenu-banniere{
+    position: absolute;
+    text-align: center;
+    width: 100%;
+    top: 50%;
+}
+
+.banniere .contenu-banniere h1,
+.banniere .contenu-banniere h2{
+    color: rgb(241, 240, 247);
+    font-size: 50px;
+    
+}
+
+article,aside
+{
+    display: inline-block;
+    vertical-align: top;
+    text-align: justify;
+}
+article{
+    width: 1200px;
+    margin-right: 15px;
+
+}
+article h2{
+    text-align: center;
+    color: red;
+}
+article h1{
+    font-size: 50px;
+
+}
+aside{
+    margin-right: 15px;
+}
+
+.present{
+    position: relative;
+    width: 300px;
+    background-color: #AAA;
+    box-shadow: 0px 2px 5px #1c1a19;
+    border-radius: 5px;
+    padding: 10px;
+    color: white;
+    font-size: 0.9em;
+}
+
+.new {
+    position:right;
+    width: 500px;
+    background-color: rgb(29, 11, 192);
+    box-shadow: 0px 2px 5px #1c1a19;
+    border-radius: 5px;
+    padding: 10px;
+    color: white;
+    font-size: 0.9em;
+    right: 50px;
+
+}
+.besion{
+    position: left;
+    width: 300px;
+    background-color: #4C8;
+    box-shadow: 0px 2px 5px #1c1a19;
+    border-radius: 5px;
+    padding: 10px;
+    color: white;
+    font-size: 0.9em;
+}
+
+.field{
+    background: #748997;
+    text-align: center;
+    border: #1c1a19;
+    font-size: 15px;
+    padding: 10px;
+}
+.label{
+    background: rgb(170, 200e, 0.8);
+    margin: 20px 0px;
+    
+}
+#field:hover{
+    box-shadow: 0px 0px 5px #444;
+}
+legend{
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 18px;
+    color: #444;
+    text-align: center;
+    font-family: x-large;
+
+}
+input{
+    width: 300px;
+    height: 50px;
+}
+legend{
+    font-size: 25px;
+    color: rgb(28, 24, 223);
+    
+}
+p.teler{
+    text-align: center;
+    background-color: #d66c0b;
+    font-size: 20px;
+}
+.iot-des{
+    font-size: 15px;
+}
+.galerie-linux{
+    text-align: center;
+}
+
+ @media screen and(max-width: 780px){
+     header{
+         height: 50px;
+     }
+     h1{
+         font-size: 28px;
+         margin: 20px 0px 0px 0px;
+     }
+     nav li a{
+         font-size: 12px;
+         padding: 10px;
+     }
+     nav li:hover a{
+         padding: 5px 10px 10px 10px
+
+     }
+ }
+
+
+
+ /*------------------------------------------------------------------ Contact -------------------------------------------------------------------*/
+
+.contact-box {
+	padding: 70px 0px;
+}
+
+.left-contact h2 {
+	font-size: 22px;
+	font-weight: 500;
+	padding-bottom: 30px;
+}
+
+.cont-line {
+	overflow: hidden;
+	margin-bottom: 30px;
+}
+
+.icon-b {
+	width: 55px;
+	height: 55px;
+	text-align: center;
+	line-height: 55px;
+	font-size: 25px;
+	margin-right: 15px;
+	color: #fff;
+	border-radius: 100%;
+	background: #f2184f;
+}
+
+.dit-right h4 {
+	font-size: 16px;
+	color: #3a4149;
+	font-weight: 500;
+	margin: 0;
+	padding: 0;
+}
+
+.dit-right p {
+	font-size: 14px;
+	margin-top: 0;
+}
+
+.dit-right a {
+	font-size: 14px;
+	color: #3a4149;
+	font-weight: 300;
+	line-height: normal;
+}
+
+.dit-right a:hover {
+	color: #57cef8;
+}
+
+.contact-block {}
+
+.contact-block .form-group .form-control {
+	background: #333;
+	height: 48px;
+	font-size: 14px;
+	border: 0;
+	padding: 5px 20px;
+	-webkit-box-shadow: none;
+	box-shadow: none;
+	border-radius: 0;
+	font-weight: 200;
+	letter-spacing: 0px;
+}
+
+.submit-button .btn-common {
+	background-color: #f2184f;
+	height: 45px;
+	line-height: 45px;
+	font-size: 14px;
+	font-weight: 400;
+	color: #fff;
+	padding: 0 20px;
+	border: 0;
+	outline: 0;
+	text-transform: uppercase;
+	border-radius: 0px;
+	-webkit-transition: all 0.3s;
+	-moz-transition: all 0.3s;
+	-o-transition: all 0.3s;
+	-ms-transition: all 0.3s;
+	transition: all 0.3s;
+	border-radius: 0;
+	opacity: 1;
+}
+
+.contact-block .form-group textarea.form-control {
+	height: 150px;
+	padding-top: 15px;
+}
+
+.submit-button .btn-common:hover {
+	background-color: #111;
+	opacity: 1;
+}
+
+.custom-select {
+	height: 45px;
+	font-size: 16px;
+}
+
+select.form-control:not([size]):not([multiple]) {
+	height: calc(45px + 2px);
+}
+
+.help-block ul li {
+	color: red;
+}
+
+.menu_footer li a {
+    font-family: 'poppins', sans-serif;
+    font-size: 15px;
+    font-weight: 300;
+}
+
+.menu_footer li a:hover,
+.menu_footer li a:focus {
+	color: #d66c0b !important;
+}
+
+.menu_footer li {
+    margin: 3px 0;
+}
+
+.footer-box {
+    background: #000202;
+    padding: 70px 0;
+}
+
+.footer-box .footer-company-name {
+	text-align: center;
+	margin: 0px;
+	color: #333;
+	font-size: 13px;
+	font-weight: 400;
+	padding-top: 2px;
+}
+
+footer.footer-box h3 {
+    font-size: 25px;
+    margin-bottom: 35px;
+    font-weight: 300;
+    margin-top: 35px;
+}
+
+.footer-box .footer-company-name a:hover {
+	color: #e91327;
+}
+
