@@ -1,0 +1,474 @@
+
+@import url('https://fonts.googleapis.com/css?family=Roboto:100,300,500,900');
+@import url('https://fonts.googleapis.com/css?family=Roboto:100,300,900');
+html,body{
+    margin: 0px;
+    padding: 0px;
+    font-family: "lato";
+    overflow-x: hidden;
+    
+}
+.inner{
+    width: 80%;
+    margin: auto;
+   
+
+}
+/********************galerie*********************/
+.galeries{
+    text-align: center;
+}
+.galerie_titre{
+    text-align: center;
+    font-size: 35px;
+    color:green;
+    border-bottom:5px solid red;
+    display: inline;
+
+}
+.galeries_items{
+    display: flex;
+    flex-direction: row;
+   justify-content: space-between;
+    padding-top: 30px;
+    flex-wrap: wrap;
+
+
+}
+.galeries_items1{
+    display: flex;
+    flex-direction: row;
+   justify-content: space-between;
+    padding-top: 30px;
+    flex-wrap: wrap;
+
+}
+
+.galerie1{
+    width: 25%;
+    height: 200px;
+    background: red;
+    display: grid;
+    border-radius: 7px;
+    position: relative;
+    overflow: hidden;
+    padding: 20px;
+    cursor: pointer;
+
+}
+.galerie2{
+    width: 25%;
+    height: 200px;
+    background: red;
+    display: grid;
+    border-radius: 7px;
+    position: relative;
+    overflow: hidden;
+    padding: 20px;
+    cursor: pointer;
+
+}
+.galerie3{
+    width: 25%;
+    height: 200px;
+    background: red;
+    display: grid;
+    border-radius: 7px;
+    position: relative;
+    overflow: hidden;
+    padding: 20px;
+    cursor: pointer;
+
+}
+.galerie4{
+    width: 25%;
+    height: 200px;
+    background: red;
+    display: grid;
+    border-radius: 7px;
+    position: relative;
+    overflow: hidden;
+    padding: 20px;
+    cursor: pointer;
+
+}
+.galerie5{
+    width: 25%;
+    height: 200px;
+    background: red;
+    display: grid;
+    border-radius: 7px;
+    position: relative;
+    overflow: hidden;
+    padding: 20px;
+    cursor: pointer;
+
+
+}
+.galerie6{
+    width: 25%;
+    height: 200px;
+    background: red;
+    display: grid;
+    border-radius: 7px;
+    position: relative;
+    overflow: hidden;
+    padding: 20px;
+    cursor: pointer;
+
+}
+.galerie1-filtre{
+    position: absolute; 
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.2));
+}
+.galerie2-filtre{
+    position: absolute; 
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.2));
+}
+.galerie3-filtre{
+    position: absolute; 
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.2));
+}
+.galerie4-filtre{
+    position: absolute; 
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.2));
+}
+.galerie5-filtre{
+    position: absolute; 
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.2));
+}
+.galerie6-filtre{
+    position: absolute; 
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.2));
+}
+.galerie2-name{
+    color: #fff;
+    z-index: 1;
+    position: relative;
+    text-align: left;
+    font-size: 18px;
+    line-height: 28px;
+}
+/*
+.galerie1:hover .galerie-icon{
+    transform: translateY(0);
+}
+.galerie2:hover .galerie-icon{
+    transform: translateY(0);
+}
+.galerie3:hover .galerie-icon{
+    transform: translateY(0);
+}
+.galerie4:hover .galerie-icon{
+    transform: translateY(0);
+}
+.galerie5:hover .galerie-icon{
+    transform: translateY(0);
+}
+.galerie6:hover .galerie-icon{
+    transform: translateY(0);
+}
+.galerie-icon{
+    position: absolute;
+    color: #fff;
+    font-size: 40px;
+    z-index: 1;
+    transform: translateY(100%);
+    height: 100%;
+    width: 100%;
+    top: 0px;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.5s ease-in-out;
+
+
+}*/
+/*******************fin galerie*****************/
+
+/*debut inscription*/
+/*mise en forme de la partie inscription
+
+.inscription{
+    text-align: center;
+    background-color: green;
+    margin-bottom: 10px;
+    padding-block-start: 5px;
+  
+}*/
+.h2-contact{
+    color: rgb(26, 25, 25);
+    text-align: center;
+    text-transform: capitalize;
+    font-weight: bold;
+
+}
+.container-fluid{
+    max-width: 700px;
+    margin: auto;
+    margin-top: 100px;
+    background-color: green;
+    text-align: center;
+    border-radius: 20px;
+    padding: 40px;
+    color: #fff;
+    box-sizing: border-box;
+    font-family: Arial,Helvetica,sans-serif;
+}
+.field input{
+    width: 100%;
+    margin: 10px 0;
+    outline: none;
+    background-color: transparent;
+    color: #fff;
+    padding: 10px 6px;
+     font-size: 18px;
+     font-weight: bold;
+     box-sizing: border-box;
+     border: none;
+     border-bottom: 1px #fff solid;
+}
+.field ::placeholder{
+    text-align: center;
+}
+input.form-control{
+    border-radius: 100px;
+
+}
+button.bouton{
+    border: 20px solid #0070bc;
+}
+.forme{
+    font-size: 70px;
+    color: #290527;
+
+
+
+    /*nouveau formulaire*/
+
+    /****fin nouveau*****/
+}
+/*fin register*/
+/***contact**/
+.field{
+    
+    text-align: center;
+    border: #1c1a19;
+    font-size: 15px;
+    padding: 10px;
+}
+.label{
+    background: rgb(170, 200e, 0.8);
+    margin: 20px 0px;
+    
+}
+#field:hover{
+    box-shadow: 0px 0px 5px rgb(6, 233, 93);
+}
+legend{
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 18px;
+    color: #444;
+    text-align: center;
+    font-family: x-large;
+
+}
+input{
+    width: 300px;
+    height: 50px;
+}
+legend{
+    font-size: 25px;
+    color: rgb(28, 24, 223);
+    
+}
+/** end contact***/
+
+
+
+
+/*------------------------------------------------------------------ Contact -------------------------------------------------------------------*/
+
+.contact-box {
+	padding: 70px 0px;
+}
+
+.left-contact h2 {
+	font-size: 22px;
+	font-weight: 500;
+	padding-bottom: 30px;
+}
+
+.cont-line {
+	overflow: hidden;
+	margin-bottom: 30px;
+}
+
+.icon-b {
+	width: 55px;
+	height: 55px;
+	text-align: center;
+	line-height: 55px;
+	font-size: 25px;
+	margin-right: 15px;
+	color: #fff;
+	border-radius: 100%;
+	background: #f2184f;
+}
+
+.dit-right h4 {
+	font-size: 16px;
+	color: #3a4149;
+	font-weight: 500;
+	margin: 0;
+	padding: 0;
+}
+
+.dit-right p {
+	font-size: 14px;
+	margin-top: 0;
+}
+
+.dit-right a {
+	font-size: 14px;
+	color: #3a4149;
+	font-weight: 300;
+	line-height: normal;
+}
+
+.dit-right a:hover {
+	color: #57cef8;
+}
+
+
+.contact-block .form-group .form-control {
+	background: #333;
+	height: 48px;
+	font-size: 14px;
+	border: 0;
+	padding: 5px 20px;
+	-webkit-box-shadow: none;
+	box-shadow: none;
+	border-radius: 0;
+	font-weight: 200;
+	letter-spacing: 0px;
+}
+
+.submit-button .btn-common {
+	background-color: #f2184f;
+	height: 45px;
+	line-height: 45px;
+	font-size: 14px;
+	font-weight: 400;
+	color: #fff;
+	padding: 0 20px;
+	border: 0;
+	outline: 0;
+	text-transform: uppercase;
+	border-radius: 0px;
+	-webkit-transition: all 0.3s;
+	-moz-transition: all 0.3s;
+	-o-transition: all 0.3s;
+	-ms-transition: all 0.3s;
+	transition: all 0.3s;
+	border-radius: 0;
+	opacity: 1;
+}
+
+.contact-block .form-group textarea.form-control {
+	height: 150px;
+	padding-top: 15px;
+}
+
+.submit-button .btn-common:hover {
+	background-color: #111;
+	opacity: 1;
+}
+
+.custom-select {
+	height: 45px;
+	font-size: 16px;
+}
+
+select.form-control:not([size]):not([multiple]) {
+	height: calc(45px + 2px);
+}
+
+.help-block ul li {
+	color: red;
+}
+
+.menu_footer li a {
+    font-family: 'poppins', sans-serif;
+    font-size: 15px;
+    font-weight: 300;
+}
+
+.menu_footer li a:hover,
+.menu_footer li a:focus {
+	color: #d66c0b !important;
+}
+
+.menu_footer li {
+    margin: 3px 0;
+}
+
+.footer-box {
+    background: #000202;
+    padding: 70px 0;
+}
+
+.footer-box .footer-company-name {
+	text-align: center;
+	margin: 0px;
+	color: #333;
+	font-size: 13px;
+	font-weight: 400;
+	padding-top: 2px;
+}
+
+footer.footer-box h3 {
+    font-size: 25px;
+    margin-bottom: 35px;
+    font-weight: 300;
+    margin-top: 35px;
+}
+
+.footer-box .footer-company-name a:hover {
+	color: #e91327;
+}
+
+
+@media only screen and (max-width: 880px){ 
+
+    
+}
+@media only screen and (max-width: 1100px){
+    .galeries_items,.galeries_items1{
+        justify-content: center;
+    } 
+    .galerie1,.galerie2,.galerie3,
+    .galerie4,.galerie5,.galerie6{
+        width: 500px;
+        margin-bottom: 20px;
+        margin-left: 20px;
+        margin-right: 20px;
+
+    }
+    
+}
+

@@ -1,0 +1,354 @@
+.menu {
+    background: #F44336;
+    width: 100%;
+    height: 66px;
+    line-height: 66px;
+}
+
+.m-left {
+    float: left;
+}
+
+.logo {
+    margin: 0;
+    padding: 0;
+    color: #fff;
+    text-transform: uppercase;
+    font-family: 'Roboto';
+    font-weight: 900;
+    font-size: 35px;
+    letter-spacing: 1px;
+    z-index: 99999999999999;
+}
+
+.m-right {
+    float: right;
+}
+
+.m-link {
+    text-decoration: none;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 600;
+    padding: 0;
+    margin: 0 10px;
+    transition: all 0.3s ease-in-out;
+    border-bottom: 2px solid transparent;
+    padding-bottom: 3px;
+}
+
+.m-link i {
+    margin-right: 5px;
+}
+
+.m-link:hover {
+    border-color: #fff;
+}
+
+.m-nave-toggle {
+    width: 40px;
+    height: 66px;
+    display: none;
+    align-items: center;
+    float: right;
+    cursor: pointer;
+}
+
+span.m-toggle-icon,
+span.m-toggle-icon:before,
+span.m-toggle-icon:after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 3px;
+    background: #fff;
+    position: relative;
+    transition: all 0.3s ease-in-out;
+}
+
+span.m-toggle-icon:before {
+    top: 12px;
+}
+
+span.m-toggle-icon:after {
+    top: -12px;
+}
+
+.m-right.is-open {
+    transform: translateX(0);
+}
+
+.m-nave-toggle.is-open span.m-toggle-icon {
+    background: transparent;
+}
+
+.m-nave-toggle.is-open span.m-toggle-icon:before,
+.m-nave-toggle.is-open span.m-toggle-icon:after {
+    transform-origin: center;
+    transform: rotate(45deg);
+    top: 0;
+}
+
+.m-nave-toggle.is-open span.m-toggle-icon:after {
+    transform: rotate(-45deg);
+}
+
+
+/******logos-tete****/
+
+.logos-tete {
+    width: 10%;
+    margin-right: 310px;
+    white-space: 10px;
+}
+
+.logos-tete3 {
+    text-align: right;
+}
+
+
+/*la baniere  du background *****************/
+
+.banniere .banniere-image {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: auto;
+    min-width: 1024;
+    min-height: 100%;
+    z-index: 1;
+}
+
+.banniere .contenu-banniere {
+    position: absolute;
+    text-align: center;
+    width: 100%;
+    top: 500px;
+    font-size: 300px;
+    z-index: 999;
+}
+
+.banniere .contenu-banniere h1,
+.banniere .contenu-banniere h2 {
+    color: green;
+    font-size: 50px;
+}
+
+
+/*************************fin bg****************/
+
+
+/*la partie section*/
+
+
+/****presentation**/
+
+.ecolesup {
+    text-align: center;
+}
+
+.presentation {
+    width: 100%;
+    height: 100%;
+}
+
+.titre-licence {
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.titre-master {
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.presenta3 p {
+    text-align: center;
+}
+
+.presenta3,
+.presenta4 {
+    font-size: 20px;
+}
+
+.presenta4 p {
+    text-align: center;
+}
+
+.presenta4 li {
+    margin-left: 25%;
+}
+
+
+/*a propos**/
+
+.apropos {
+    margin-left: 40%;
+    font-size: 40px;
+    color: red;
+}
+
+article,
+aside {
+    display: inline-block;
+    vertical-align: top;
+    text-align: justify;
+}
+
+article {
+    width: 1200px;
+    margin-right: 15px;
+}
+
+article h2 {
+    text-align: center;
+    color: red;
+}
+
+article h1 {
+    font-size: 50px;
+}
+
+aside {
+    margin-right: 40px
+}
+
+.present {
+    margin-left: 20px;
+    width: 300px;
+    background-color: #AAA;
+    box-shadow: 0px 2px 5px #1c1a19;
+    border-radius: 5px;
+    padding: 10px;
+    color: white;
+    font-size: 0.9em;
+    text-align: center;
+}
+
+.new {
+    margin-left: 20px;
+    width: 400px;
+    height: 250px;
+    background-color: green;
+    box-shadow: 0px 2px 5px #1c1a19;
+    border-radius: 5px;
+    padding: 10px;
+    color: white;
+    font-size: 0.9em;
+    right: 50px;
+    text-align: center;
+}
+
+.besion {
+    margin-left: 20px;
+    width: 300px;
+    background-color: #4C8;
+    box-shadow: 0px 2px 5px #1c1a19;
+    border-radius: 5px;
+    padding: 10px;
+    color: white;
+    font-size: 0.9em;
+    text-align: center;
+}
+
+p.teler {
+    margin-left: 300px;
+    margin-right: 300px;
+    padding: 20px 25px 25px 25px;
+    text-align: center;
+    background-color: green;
+    font-size: 20px;
+}
+
+@media only screen and (max-width: 880px) {
+    .m-right {
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 100%;
+        height: auto;
+        background: #F44336;
+        transform: translateX(-100%);
+        transition: all 0.3s ease-in-out;
+    }
+    .m-nave-toggle {
+        display: flex;
+        position: relative;
+    }
+    .m-link {
+        display: block;
+        text-align: center;
+        padding: 0;
+        margin: 0 25px;
+        height: 50px;
+        margin: auto;
+    }
+    .banniere {
+        position: relative;
+        z-index: -9;
+    }
+    .banniere .contenu-banniere {
+        position: absolute;
+        text-align: center;
+        width: 100%;
+        top: 20%;
+        font-size: 20px;
+    }
+    .banniere .contenu-banniere h1,
+    .banniere .contenu-banniere h2 {
+        font-size: 250%;
+    }
+    img.logos-tete {
+        margin: 0 auto;
+        margin-right: 22%;
+        z-index: -5;
+    }
+    .banniere .banniere-image {}
+    p.teler {
+        float: left;
+        text-align: left;
+        display: flex;
+        float: left;
+    }
+    .class_article {
+        float: left;
+        width: 85%;
+        margin-left: 20px;
+    }
+    .ecolesup {
+        font-size: 100%;
+    }
+    .presenta1 {
+        font-size: 100%;
+        text-align: center;
+    }
+    .presenta2 {
+        font-size: 100%;
+        float: left;
+    }
+    p.teler {
+        text-decoration: none;
+        text-align: center;
+        margin: 0;
+        padding: 0;
+        margin-left: 20px;
+    }
+    /**section developer**/
+    aside {
+        margin-left: 20px;
+        margin-right: 20px;
+        width: 1000px;
+    }
+    .present,
+    .new,
+    .besion {
+        margin-left: 20px;
+        margin-right: 20px;
+        margin-bottom: 20px;
+        text-align: center;
+        width: 300px;
+    }
+}

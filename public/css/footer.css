@@ -1,0 +1,86 @@
+/*mise en forme du  footer*/
+footer{
+    background: url('images/ico_top.png') no-repeat top center,
+    url('images/separateur.png') repeat-x top, url('images/ombre.png')
+     repeat-x top;
+    padding-top: 30px;
+    background-color: #1c1a19;
+   
+}
+.footer h1{
+    color: #F44336;
+}
+footer p,footer ul
+{
+    font-size: 1em;
+    color: #FFF
+}
+footer h1{
+    font-size: 2em;
+    color: #FFF
+}
+#adress ,#kk , #activite{
+    display: inline-block;
+    vertical-align: top;
+}
+#adress{
+    width: 28%;
+    margin-left: 20px;
+}
+#kk
+{
+    width: 35%;
+}
+#emplacement{
+    width: 31%;
+}
+#kk img{
+    border: 1px solid #181818;
+    margin-right: 50px;
+}
+#activite ul{
+    display: inline-block;
+    vertical-align: top;
+    margin-top: 0;
+    width: 48%;
+    list-style-image: url('images/ico_liensexterne.png');
+    padding-left: 2px;
+}
+#activite a{
+
+    text-decoration: none;
+    color:#FFF;
+}
+#a.telecharge{
+    text-align: center;
+}
+
+/*****************fin*********************/
+@media only screen and (max-width: 880px){
+    .footer h1{
+        text-align: center;
+        margin-right: 10px;
+        margin-left: 10px;
+    }
+    .adress,.kk,.activite{
+        justify-content: center;
+        width: 500px;
+    }
+    #adress ,#kk , #activite{
+        width: 100%;
+       
+    }
+    #adress p{
+        text-align: center;
+    }
+    #kk p{
+        text-align: center;
+    }
+    #activite ul ,#activite li ,#activite a{
+        text-align: center;
+        padding-top: 5px;
+    }
+    #a.telecharge{
+        float: left;
+    }
+}
