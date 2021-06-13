@@ -1,186 +1,270 @@
 <!DOCTYPE html>
-<html lang="fr-FR">
+<html lang="en">
 
 <head>
-    <!--head-->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>ESI TEAM WEB</title>
-    <link rel="stylesheet" href="src/css/style.css">
+    <title>site de ESI</title>
+    <link rel="stylesheet" href="public/css/style.css">
+    <link rel="stylesheet" href="public/css/header.css">
+    <link rel="stylesheet" href="public/css/footer.css">
+    <script src="https://use.fontawesome.com/2b58146f7c.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js " charset="utf-8"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.js"></script>
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+
+    <style>
+        .menu {
+            background: #F44336;
+            width: 100%;
+            height: 66px;
+            line-height: 66px;
+        }
+        
+        .m-left {
+            float: left;
+        }
+        
+        .logo {
+            margin: 0;
+            padding: 0;
+            color: #fff;
+            text-transform: uppercase;
+            font-family: 'Roboto';
+            font-weight: 900;
+            font-size: 35px;
+            letter-spacing: 1px;
+            z-index: 99999999999999;
+        }
+        
+        .m-right {
+            float: right;
+        }
+        
+        .m-link {
+            text-decoration: none;
+            color: #fff;
+            text-transform: uppercase;
+            font-weight: 600;
+            padding: 0;
+            margin: 0 10px;
+            transition: all 0.3s ease-in-out;
+            border-bottom: 2px solid transparent;
+            padding-bottom: 3px;
+        }
+        
+        .m-link i {
+            margin-right: 5px;
+        }
+        
+        .m-link:hover {
+            border-color: #fff;
+        }
+        
+        .m-nave-toggle {
+            width: 40px;
+            height: 66px;
+            display: none;
+            align-items: center;
+            float: right;
+            cursor: pointer;
+        }
+        
+        span.m-toggle-icon,
+        span.m-toggle-icon:before,
+        span.m-toggle-icon:after {
+            content: "";
+            display: block;
+            width: 100%;
+            height: 3px;
+            background: #fff;
+            position: relative;
+            transition: all 0.3s ease-in-out;
+        }
+        
+        span.m-toggle-icon:before {
+            top: 12px;
+        }
+        
+        span.m-toggle-icon:after {
+            top: -12px;
+        }
+        
+        .m-right.is-open {
+            transform: translateX(0);
+        }
+        
+        .m-nave-toggle.is-open span.m-toggle-icon {
+            background: transparent;
+        }
+        
+        .m-nave-toggle.is-open span.m-toggle-icon:before,
+        .m-nave-toggle.is-open span.m-toggle-icon:after {
+            transform-origin: center;
+            transform: rotate(45deg);
+            top: 0;
+        }
+        
+        .m-nave-toggle.is-open span.m-toggle-icon:after {
+            transform: rotate(-45deg);
+        }
+        
+        @media only screen and (max-width: 880px) {
+            .m-right {
+                position: absolute;
+                top: 0;
+                right: 0;
+                width: 100%;
+                height: auto;
+                background: #F44336;
+                transform: translateX(-100%);
+                transition: all 0.3s ease-in-out;
+            }
+            .m-nave-toggle {
+                display: flex;
+                position: relative;
+            }
+            .m-link {
+                display: block;
+                text-align: center;
+                padding: 0;
+                margin: 0 25px;
+                height: 50px;
+                margin: auto;
+            }
+            .banniere {
+                position: relative;
+                z-index: -9;
+            }
+        }
+    </style>
 </head>
-<!--head-->
 
 <body>
+    <header role="header">
 
-    <!--body-->
+        <a href="#"> <img src="public/img/logo_esi.png" alt="" class="logos-tete"></a>
+        <a href="#"><img src="public/img/logo_UPB.jpg" alt="" class="logos-tete"> </a>
+        <a href="#"><img src="public/img/BF.png" alt="" class="logos-tete" id="clogos-tete0"></a>
 
+        <nav class="menu" role="navigation">
+            <div class="inner">
+                <div class="m-left">
+                    <h1 class="logo">SITE DE ESI</h1>
+                </div>
+                <div class="m-right">
+                    <a href="index.html" class="m-link"> <i class="far fa-home" aria-hidden="true"></i> Acceuil</a>
+                    <a href="galerie.html" class="m-link"> <i class="far fa-newspaper" aria-hidden="true"></i> Galerie</a>
+                    <a href="inscription.html" class="m-link"> <i class="fas fa-edit"></i> register</a>
+                    <a href="contact.html" class="m-link"> <i class="far fa-envelope" aria-hidden="true"></i> contact</a>
+                </div>
+                <div class="header-texture"></div>
+                <div class="m-nave-toggle">
+                    <span class="m-toggle-icon"></span>
 
-    <!--header-->
-    <header>
-        <div class="logo">
-            <a href="#"><img src="src/img/BF.png" height="100" width="90" alt="logo du bu burkina" class="space"></a>
+                </div>
 
-            <a href="#"> <img src="src/img/logo_esi.png" height="100" width="90" alt="ESI" class="space"></a>
+            </div>
 
-            <a href="#"><img src="src/img/logo_UPB.jpg" height="100" width="90" alt="université UNB" class="space"></a>
+        </nav>
 
+        <div class="block">
+            <div class="banniere">
+                <img src="public/img/bg1.jpg" id="banniere-image" alt="un ordinateur avec code" class="banniere-image">
+                <div class="contenu-banniere">
+                    <h1> <strong>Bienvenu sur le site de l'ESI</strong> </h1>
+
+                </div>
+            </div>
         </div>
     </header>
-
-    <!--header-->
-    <!--nav-->
-    <nav>
-        <div class="table">
-            <ul>
-                <li class="menu-ind">
-                    <a href="index.html">Acceuil</a>
-                </li>
-                <li class="menu-gal">
-                    <a href="galerie.html">galerie</a>
-                </li>
-
-                <li class="menu-ins">
-                    <a href="inscription.html">inscription</a>
-                </li>
-                <li class="menu-con">
-                    <a href="contact.html">contact</a>
-
-                </li>
-            </ul>
-        </div>
-
-    </nav>
-
-    <div class="block">
-        <div class="banniere">
-            <img src="src/img/bg.jpg" height="800" width="1350" alt="un ordinateur avec code" class="banniere-image">
-            <div class="contenu-banniere">
-                <h1> <strong>Bienvenu sur le site de l'ESI</strong> </h1>
-                <h2> la presentation</h2>
-                <button class="button"> Contactez-nous</button>
-            </div>
-        </div>
-    </div>
-
     <!--partie section-->
-    <section>
-        <article>
+    <section class="section-principal">
+        <article class="class_article">
             <div class="presentation">
-                <h1> <strong>
-                        <font color=#FF0000>E</font>cole <font color=#FF0000>S</font>uperieure d'<font color=#FF0000>
-                            I</font>nformatique
-                    </strong></h1>
-                <h2> Presentation de l'ESI</h2>
-                <p>
-                    <div align=center>
-                        <h3>L’<b>ESI</b> (Ecole Supérieure d’Informatique) est une école <b> prestigieuse</b> qui a vu
-                            le
-                            jour dans les années 1990 et qui fait ses preuves dans la quête de l'excellence.
-                            Elle forme les étudiants dans le domaine de l'informatique.L'ESI est une UFR de l'université
-                            NAZI BONI (UNB) de Bobo-Dioulasso.<br>
-                            Qui peut s'inscrire a L'ESI? Toute personne titulaire d'un bac C,D et E ayant réussi au test
-                            d'entrée à L'ESI ou accepté sur titre privé.<br>
-                            L'ESI offre une formation divisée en deux cycles:le cycle de la licence et le cycle de
-                            master.
+                <h1 class="ecolesup">
+                    <strong>
+                            <font color=#FF0000>E</font>cole <font color=#FF0000>S</font>uperieure d'<font color=#FF0000>
+                                I</font>nformatique
+                        </strong>
+                </h1>
+                <h2 class="presenta1"> Presentation de l'ESI</h2>
+                <div class="presenta2">
+                    <p>
+                        <h3>L’<b>ESI</b> (Ecole Supérieure d’Informatique) est une école <b> prestigieuse</b> qui a vu le jour dans les années 1990 et qui fait ses preuves dans la quête de l'excellence. Elle forme les étudiants dans le domaine de l'informatique.L'ESI
+                            est une UFR de l'université NAZI BONI (UNB) de Bobo-Dioulasso.<br> Qui peut s'inscrire a L'ESI? Toute personne titulaire d'un bac C,D et E ayant réussi au test d'entrée à L'ESI ou accepté sur titre privé.<br> L'ESI offre une
+                            formation divisée en deux cycles:le cycle de la licence et le cycle de master.
                         </h3>
-                </p>
-            </div>
-            <h4><u>
-                    <div align=center>Cycle de licence
-                </u>
-                </div>
-                <P>Ce cycle s'étend sur trois ans: L1,L2 et L3. Les deux premières années sont un tronc commun. En effet
-                    au
-                    cours de ces deux première années,<br>
-                    les étudiants sont initiés à la programmation et à la manipulation des réseaux et systèmes. En L3 un
-                    choix entre ces deux branches est fait.</P>
-            </h4>
-            <h4><u>
-                    <div align=center>Cycle de master
-                </u></div>
-                <p>Après le licence, L'ESI offre des cours en master aux étudiants désirant approfondir leurs
-                    connaissances informatiques.<br>
-                    L'ESI possède quatre masters:<br>
-                    <ul>
-                        <li>Master en conception et architecture des réseaux</li>
-                        <li>Master système d'information-Système d'Aide à l'aide de décision</li>
-                        <li>Master en Science de données</li>
-                        <li>Master en cyber sécurité</li>
-                    </ul>
-
-
-                    </div>
-
-                    <p class="teler">
-                        <a class="telecharge" href="BROCHURE.pdf" download="BBROCHURE.pdf"> telecharger un apercu des tout ce qui
-                            conserne
-                            l'ESI</a>
                     </p>
+                </div>
+                <div class="presenta3">
+                    <h4 class="titre-licence"> Cycle de licence</h4>
+                    <P>Ce cycle s'étend sur trois ans: L1,L2 et L3. Les deux premières années sont un tronc commun. En effet au cours de ces deux première années,<br> les étudiants sont initiés à la programmation et à la manipulation des réseaux et systèmes.
+                        En L3 un choix entre ces deux branches est fait.
+                    </P>
+                </div>
+                <div class="presenta4">
+                    <h4 class="titre-master"> cycle de Master</h4>
+                    <p>
+                        Après le licence, L'ESI offre des cours en master aux étudiants désirant approfondir leurs connaissances informatiques.<br> L'ESI possède quatre masters:<br>
+                        <ul>
+                            <li>Master en conception et architecture des réseaux</li>
+                            <li>Master système d'information-Système d'Aide à l'aide de décision</li>
+                            <li>Master en Science de données</li>
+                            <li>Master en cyber sécurité</li>
+                        </ul>
+                    </p>
+                </div>
+            </div>
+            <p class="teler">
+                <a class="telecharge" href="BROCHURE.pdf" download="BROCHURE.pdf"> telecharger un apercu de tout ce qui
+                          nous  conserne
+                            </a>
+            </p>
         </article>
-        <h1>  <strong> A propos</strong></h1>
 
-        <aside class="present">
-            <h1> <strong>Les developeurs</strong> </h1>
-            <section>
-                <h3>Aurelie DAYAMA</h3>
-                <p>je suis une etudiante de l'esi </p>
-                <br>
-                <p>motivation</p>
-                <p>J'ai acquis plusieurs connaissances a l'ESI et je suis très fière.A l'ESI plus qu'une école,c'est une
-                    famille.Alors rejoins moi à l'ESI!!!</p>
-            </section>
+        <h1> <strong class="apropos"> A propos</strong></h1>
+        <p>
+            <aside class="present">
+                <h1> <strong>Les developeurs</strong> </h1>
+                <section>
+                    <h3>Aurelie DAYAMA</h3>
+                    <p>je suis une etudiante de l'esi </p>
+                    <br>
+                    <p>motivation</p>
+                    <p>J'ai acquis plusieurs connaissances a l'ESI et je suis très fière.A l'ESI plus qu'une école,c'est une famille.Alors rejoins moi à l'ESI!!!</p>
+                </section>
+            </aside>
+            <aside class="new">
+                <h1> <strong>Les developeurs</strong> </h1>
+                <section>
+                    <h3>Fatoumata SONTIE</h3>
+                    <p>je suis une etudiante de l'esi </p>
+                    <br>
+                    <p>motivation</p>
+                    <p>Mettre en pratique les connaissances acquises à l'ESI. L'ESI une école à la pointe de la technologie.
+                    </p>
+                </section>
 
-        </aside>
-        <aside class="new">
-            <h1> <strong>Les developeurs</strong> </h1>
-            <section>
-                <h3>Fatoumata SONTIE</h3>
-                <p>je suis une etudiante de l'esi </p>
-                <br>
-                <p>motivation</p>
-                <p>Mettre en pratique les connaissances acquises à l'ESI. L'ESI une école à la pointe de la technologie.
-                </p>
-            </section>
-
-        </aside>
-        <aside class="besion">
-            <h1> <strong>Les developeurs</strong> </h1>
-            <section>
-                <h3>Djamilatou TONDE</h3>
-                <p>je suis une etudiante de l'esi </p>
-                <br>
-                <p>motivation</p>
-                <p>Satisfaite de la première année de formation,testons nos connaissances. l'ESI la petite école aux
-                    grandes ambitions</p>
-            </section>
-
-        </aside>
-
-
-
-
+            </aside>
+            <aside class="besion">
+                <h1> <strong>Les developeurs</strong> </h1>
+                <section>
+                    <h3>Djamilatou TONDE</h3>
+                    <p>je suis une etudiante de l'esi </p>
+                    <br>
+                    <p>motivation</p>
+                    <p>Satisfaite de la première année de formation,testons nos connaissances. l'ESI la petite école aux grandes ambitions</p>
+                </section>
+            </aside>
+        </p>
     </section>
 
-
-    
-
     <!--partie section-->
 
-
-
-
-    </p>
-
-
-
-
-
-    <!--nav-->
-
-
     <!--footer-->
-    <footer>
+    <footer class="footer">
         <div id="adress">
             <h1>les adresse</h1>
             <p>info@esi.upb.bf</p>
@@ -194,13 +278,17 @@
         </div>
         <div id="kk">
             <h1>les reseaux sociaux</h1>
-            <p> <img src="src/img/facebook.png" alt="facebook"> <img src="src/img/twitter.png" alt="">  <img src="src/img/instant.png" alt="" width="50"></p>
-             <!--<p><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7290.306885408966!2d-4.315412500204923!3d11.164782674806286!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xe34fb62add3b611%3A0x16861092272984!2sEcole%20Sup%C3%A9rieure%20D&#39;Informatique%20(ESI)!5e0!3m2!1sfr!2sbf!4v1598616668910!5m2!1sfr!2sbf" width="250" height="150" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe></p>--> 
-             <p><img src="src/img/map.png" alt="" width="350" height="200"></p>
+            <p>
+                <a href="#"><img src="public/img/facebook.png" alt="facebook"></a>
+                <a href="#"><img src="public/img/twitter.png" alt=""></a>
+                <a href="#"> <img src="public/img/instant.png" alt="" width="50"></a>
+            </p>
+            <!--<p><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7290.306885408966!2d-4.315412500204923!3d11.164782674806286!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xe34fb62add3b611%3A0x16861092272984!2sEcole%20Sup%C3%A9rieure%20D&#39;Informatique%20(ESI)!5e0!3m2!1sfr!2sbf!4v1598616668910!5m2!1sfr!2sbf" width="250" height="150" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe></p>-->
+            <!--<p><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7290.306885408966!2d-4.315412500204923!3d11.164782674806286!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xe34fb62add3b611%3A0x16861092272984!2sEcole%20Sup%C3%A9rieure%20D&#39;Informatique%20(ESI)!5e0!3m2!1sfr!2sbf!4v1598616668910!5m2!1sfr!2sbf" width="250" height="150" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe></p>-->
+            <p><img src="public/img/map.png" alt="" width="350" height="200"></p>
         </div>
         <div id="activite">
             <h1>Nos activités</h1>
-
             <ul>
                 <li><a href="#">Struct IOT</a></li>
 
@@ -229,7 +317,9 @@
     <!--footer-->
 
 
-    <!--body-->
+    <script src="public/js/app.js" charset="utf-8"></script>
+
+
 
 
 </body>

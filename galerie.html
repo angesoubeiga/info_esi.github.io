@@ -1,148 +1,184 @@
 <!DOCTYPE html>
-<html lang="fr-FR">
-
+<html lang="en">
 <head>
-    <!--head-->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>ESI TEAM WEB</title>
-    <link rel="stylesheet" href="src/css/style.css">
-
-<!--
-    <style>
-        div.gallery {
-            margin: 5px;
-            border: 1px solid #ccc;
-            float: left;
-            width: 180px;
-        }
-
-        div.gallery:hover {
-            border: 1px solid #777;
-        }
-
-        div.gallery img {
-            width: 100%;
-            height: auto;
-        }
-
-        div.desc {
-            padding: 15px;
-            text-align: center;
-        }
-    </style>
--->
+    <title>site de ESI</title>
+    <link rel="stylesheet" href="public/css/style.css">
+    <link rel="stylesheet" href="public/css/header.css">
+    <link rel="stylesheet" href="public/css/footer.css">
+    <script src="https://use.fontawesome.com/2b58146f7c.js"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js " charset="utf-8"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.slim.min.js"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.js"></script>
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
 </head>
-<!--head-->
-
 <body>
+    <header role="header">
+        
+        <a href="#"> <img src="public/img/logo_esi.png" alt="" class="logos-tete"></a>
+        <a href="#"><img src="public/img/logo_UPB.jpg" alt="" class="logos-tete"> </a> 
+        <a href="#"><img src="public/img/BF.png" alt="" class="logos-tete" id="clogos-tete0"></a>
 
-    <!--body-->
+        <nav class="menu" role="navigation">
+            <div class="inner">
+                <div class="m-left">
+                    <h1 class="logo">SITE ESI</h1>
+                </div>
+                <div class="m-right">
+                    <a href="index.html" class="m-link"> <i class="far fa-home" aria-hidden="true"></i> Acceuil</a>
+                    <a href="galerie.html" class="m-link" > <i class="far fa-newspaper" aria-hidden="true"></i> Galerie</a>
+                    <a href="inscription.html" class="m-link"> <i class="fas fa-edit"></i> register</a>
+                    <a href="contact.html" class="m-link">   <i class="far fa-envelope" aria-hidden="true"></i> contact</a>
+                </div>
+                <div class="header-texture"></div>
+                <div class="m-nave-toggle">
+                    <span class="m-toggle-icon"></span>
 
-
-    <!--header-->
-    <header>
-        <div class="logo">
-            <a href="#"><img src="src/img/BF.png"    height="100" width="90" alt="logo du bu burkina" class="space"></a>
-            <a href="#"> <img src="src/img/logo_esi.png" height="100" width="90" alt="ESI" class="space"></a>
-
-            <a href="#"><img src="src/img/logo_UPB.jpg" height="100" width="90" alt="université UNB" class="space"></a>
-
+                </div>
+    
+            </div>
+           
+        </nav>
+        <div class="block">
+            <div class="banniere">
+                <img src="public/img/bg1.jpg"  id="banniere-image" alt="un ordinateur avec code" class="banniere-image">
+                <div class="contenu-banniere">
+                    <h1> <strong>Bienvenu sur le site de l'ESI</strong> </h1>
+                </div>
+            </div>
         </div>
+
     </header>
+<div class="galeries">
+    <div class="inner">
+        <h2 class="galerie_titre">galeries</h2>
+    <div class="galeries_items">
+        <div class="galerie1" style="background:url(public/img/gal1.jpg);background-size: cover;">
+            <div class="galerie1-filtre"></div>
+            <div class="galerie2-name">Ceci est un drone programmer</div>
+            <!-- <div class="galerie-icon"  ><i class="far fa-play"></i></div>--> 
 
-    <!--header-->
-    <!--nav-->
-    <nav>
-        <div class="table">
-            <ul>
-                <li class="menu-ind">
-                    <a href="index.html">Acceuil</a>
-                </li>
-                <li class="menu-gal">
-                    <a href="galerie.html">galerie</a>
-                </li>
-
-                <li class="menu-ins">
-                    <a href="inscription.html">inscription</a>
-                </li>
-                <li class="menu-con">
-                    <a href="contact.html">contact</a>
-
-                </li>
-            </ul>
         </div>
-
-    </nav>
-    <h2 class="galerie-iot">la galerie de l'esi struct IOT</h2>
-
- 
-    <div class="section-images"> 
-       <img src="src/img/IMG-20200620-WA0055.jpg" width="400" height="600" alt="image">
-        <img src="src/img/IMG-20200620-WA0053.jpg" width="400"  height="400"alt=" image2" class="image1"> 
-       <img src="src/img/IMG-20200620-WA0052.jpg" width="400" height="400" alt=" image2" class="image2">
-        <img src="src/img/IMG-20200620-WA0051.jpg"  width="400"  height="600" alt=" image2" class="image3">
-        <img src="src/img/IMG-20200531-WA0024.jpg" alt=""   width="400"  height="600" class="imges4">
-        <img src="src/img/IMG-20200531-WA0037.jpg"  width="400"  height="200" alt=" image2" class="image5">
-    </div>  
-    <div class="iot-des">
-            <p>
-                <strong>
-                la struct IOT est une structure créer par un etudiant de l'esi dans les années 2017 dans le but de reunir les etudiants de 
-                l'ESI et des autres autres ecoles de formation  à se lancer dans une avantures sans fin de strat up  pour repondres aux multiples 
-            problemes liés à linformatique , l'electronique.....  </strong>      </p>
-            <p>
-                <strong>
-            Ci'est une structure qui regroupe un grands notres d'etudiant venant de partout dinamique dans leur projet et realistaion
-        </strong>
-            </p>
-     </div>  
-
-        <h2 class="galerie-linux"> la structure ASSOC LINUX</h2>
-
-            
-            
+        <div class="galerie2"  style="background:url(public/img/gal2.jpg);background-size: cover;">
+            <div class="galerie2-filtre"></div>
+            <div class="galerie2-name">Des etudiants en plein travail</div>
+         <!-- <div class="galerie-icon"  ><i class="far fa-play"></i></div>--> 
+       
     
-
-
-        <footer>
-            <div id="adress">
-                <h1>les adresse</h1>
-                <p>info@esi.upb.bf</p>
-                <br>
-                <h1> Nos contacts</h1>
-                <p>
-                    Tel:(+226) 20 97 27 64</p>
-                <br>
-                <p></p>
-                <p>site officiel www.esi.upb.bf</p>
-            </div>
-            <div id="kk">
-            <h1>les reseaux sociaux</h1>
-            <p> <img src="src/img/facebook.png" alt="facebook"> <img src="src/img/twitter.png" alt="">  <img src="src/img/instant.png" alt="" width="50"></p>
-             <!--<p><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7290.306885408966!2d-4.315412500204923!3d11.164782674806286!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xe34fb62add3b611%3A0x16861092272984!2sEcole%20Sup%C3%A9rieure%20D&#39;Informatique%20(ESI)!5e0!3m2!1sfr!2sbf!4v1598616668910!5m2!1sfr!2sbf" width="250" height="150" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe></p>--> 
-             <p><img src="src/img/map.png" alt="" width="350" height="200"></p>
         </div>
-            <div id="activite">
-                <h1>Nos activités</h1>
-    
-                <ul>
-                    <li><a href="#">Struct IOT</a></li>
-                    <li><a href="#">Assoc LINUX</a></li>
-                    <li><a href="#">AESI</a></li>
-                </ul>
-                <h1>Nos partenaires</h1>
-                <ul>
-                    <li><a href="#">BEOOGO LABE</a></li>
-                    <li><a href="#">L'Institut FRANCRAISE</a></li>
-                    <li><a href="#">Ministeres du developpement numerique</a></li>
-                </ul>
-            </div>
-    
-        </footer>
-    </body>
+        <div class="galerie3"  style="background:url(public/img/gal3.jpg);background-size: cover;">
+            <div class="galerie3-filtre"></div>
+            <div class="galerie2-name">le projet quiet trafic en exposition</div>
+            <div class="galerie-icon"  ><i class="far fa-play"></i></div>
+            <!-- <div class="galerie-icon"  ><i class="far fa-play"></i></div>--> 
+        </div>
+       
+    </div>
+    <div class="galeries_items1">
+        <div class="galerie4"  style="background:url(public/img/gal4.jpg);background-size: cover;">
+            <div class="galerie4-filtre"></div>
+            <div class="galerie2-name">Debut de projet lave main automatique</div>
+            <!-- <div class="galerie-icon"  ><i class="far fa-play"></i></div>--> 
+            
+        </div>
+        <div class="galerie5"  style="background:url(public/img/gal71.jpg);background-size: cover;">
+            <div class="galerie5-filtre"></div>
+            <div class="galerie2-name">une seance de formation de la structure IOT</div>
+            <!-- <div class="galerie-icon"  ><i class="far fa-play"></i></div>--> 
 
-    </html>
+        </div>
+        <div class="galerie6"  style="background:url(public/img/gal6.jpg);background-size: cover;">
+            <div class="galerie6-filtre"></div>
+            <div class="galerie2-name">struct IOT presente le projet lave main automatique aux autorités</div>
+           <!--  <div class="galerie-icon"  ><i class="far fa-play"></i></div>--> 
+        </div>
+    </div>
+    <div class="galeries_items1">
+        <div class="galerie4"  style="background:url(public/img/gal10.jpg);background-size: cover;">
+            <div class="galerie4-filtre"></div>
+            <div class="galerie2-name">félicitation et en encouragement des enseignents</div>
+            <!-- <div class="galerie-icon"  ><i class="far fa-play"></i></div>--> 
+            
+        </div>
+        <div class="galerie5"  style="background:url(public/img/gal8.jpg);background-size: cover;">
+            <div class="galerie5-filtre"></div>
+            <div class="galerie2-name">projet smart home realisé par les etudiants</div>
+          <!-- <div class="galerie-icon"  ><i class="far fa-play"></i></div>--> 
+
+        </div>
+        <div class="galerie6"  style="background:url(public/img/gal9.jpg);background-size: cover;">
+            <div class="galerie6-filtre"></div>
+            <div class="galerie2-name">Equipes des etudiants dynamique et innovant</div>
+             <!--<div class="galerie-icon"  ><i class="far fa-play"></i></div>--> 
+        </div>
+    </div>
+
+
+    </div>
 
     
+
+</div>
+
+
+
+
+    
+<!--footer-->
+<footer class="footer"> 
+    <div id="adress">
+        <h1>les adresse</h1>
+        <p>info@esi.upb.bf</p>
+        <br>
+        <h1> Nos contacts</h1>
+        <p>
+            Tel:(+226) 20 97 27 64</p>
+        <br>
+        <p></p>
+        <p>site officiel www.esi.upb.bf</p>
+    </div>
+    <div id="kk">
+        <h1>les reseaux sociaux</h1>
+        <p> <img src="public/img/facebook.png" alt="facebook"> <img src="public/img/twitter.png" alt="">  <img src="public/img/instant.png" alt="" width="50"></p>
+         <!--<p><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7290.306885408966!2d-4.315412500204923!3d11.164782674806286!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xe34fb62add3b611%3A0x16861092272984!2sEcole%20Sup%C3%A9rieure%20D&#39;Informatique%20(ESI)!5e0!3m2!1sfr!2sbf!4v1598616668910!5m2!1sfr!2sbf" width="250" height="150" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe></p>--> 
+         <p><img src="public/img/map.png" alt="" width="350" height="200"></p>
+    </div>
+    <div id="activite">
+        <h1>Nos activités</h1>
+
+        <ul>
+            <li><a href="#">Struct IOT</a></li>
+
+            <li><a href="#">Assoc LINUX</a></li>
+
+            <li><a href="#">AEESI</a></li>
+            <li><a href="#">connecting</a></li>
+        </ul>
+        <h1>Nos partenaire</h1>
+        <ul>
+            <li><a href="#">BEOOGO LABE</a></li>
+
+            <li><a href="#">L'Institut FRANCRAISE</a></li>
+
+            <li><a href="#">Ministere du numerique</a></li>
+        </ul>
+    </div>
+
+</footer>
+
+
+
+
+
+
+<!--footer-->
+
+    
+    <script src="public/js/app.js" charset="utf-8"></script>
+
+
+
+    
+</body>
+</html>
